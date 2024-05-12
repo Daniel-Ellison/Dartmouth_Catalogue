@@ -1,5 +1,5 @@
 # Dartmouth_Catalogue
-Course catalogue web app for Dartmouth College.
+Course catalogue web app for Dartmouth College. See a live version at https://dartmouth.pages.dev !
 
 Consists primarily of static objects `Catalogue` (handling data) and `State` (handling user interaction).
 
