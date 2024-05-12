@@ -161,7 +161,7 @@ State.loadCookies()||Internal
 
 
 ## data.js
-Raw data file created by `Dartmouth_Catalouge_Scrapers`. Processed by `catalogue.js` and removed from memory.
+Raw data file created by `Dartmouth_Catalogue_Scrapers`. Processed by `catalogue.js` and removed from memory.
 
 ## painter.js
 
