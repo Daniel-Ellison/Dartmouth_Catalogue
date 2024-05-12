@@ -1,0 +1,46 @@
+
+/* Minor modifications to FullCalendar appearence */
+
+.fc-toolbar {
+    margin-bottom: 0 !important;
+}
+
+.fc-scrollgrid-shrink-cushion {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #1f2937;
+}
+
+.fc-col-header-cell-cushion {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.fc-theme-standard {
+    --fc-border-color: #e5e7eb !important;
+}
+
+#calendar {
+    --fc-page-bg-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .fc-theme-standard {
+        --fc-border-color: #4b5563 !important;
+    }
+
+    .fc-scrollgrid-shrink-cushion {
+        color: #9ca3af;
+    }
+    .fc-col-header-cell-cushion {
+        color:#9ca3af;
+    }
+}
+
+.fc-event-main {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
