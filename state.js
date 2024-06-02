@@ -100,9 +100,10 @@ class State {
 
     // Remove all added courses
     static clear_added() {
+        this.crn = this.added.filter(crn => Catalogue.get_section_by_crn(crn).term == this.active_filters.term)[0]
         this.added = this.added.filter(crn => Catalogue.get_section_by_crn(crn).term !== this.active_filters.term)
         draw_calendar(this.added, this.active_filters.term);
-        this.draw_section_summary(crn);
+        this.draw_section_summary(this.crn);
         this.updateCookies();
     }
 
