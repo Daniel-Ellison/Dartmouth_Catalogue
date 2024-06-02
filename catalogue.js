@@ -147,7 +147,7 @@ class Catalogue {
     static query(active_filters, favorites, added, text_query) {
         return Object.values(this.canonical)
             .filter(course => course.schools.some(school => active_filters.schools.includes(school)))
-            .filter(course => !active_filters.Favorites || favorites.includes(course.id))
+            .filter(course => !active_filters.Favorites || favorites.includes(course.course_id))
             .filter(course => !active_filters.No_Prereqs || course.prerequisites === null)
             .filter(course => text_query.toLowerCase().split(' ').every(token => course.number.toLowerCase().includes(token) || course.title.toLowerCase().includes(token)))
             .map(course => course.matching_sections(active_filters, added.map(crn => this.get_section_by_crn(crn))))
