@@ -1,8 +1,6 @@
 # Dartmouth_Catalogue
 Course catalogue web app for Dartmouth College. See a live version at https://dartmouth.pages.dev !
 
-Consists primarily of static objects `Catalogue` (handling data) and `State` (handling user interaction).
-
 Vendored libraries: FullCalendar (v6.1.11), TailwindCSS (v3.4.3), ICS (2017).
 
 ## `Catalogue` (catalogue.js)
@@ -142,26 +140,13 @@ Vendored libraries: FullCalendar (v6.1.11), TailwindCSS (v3.4.3), ICS (2017).
 }
 ```
 
-## `State` (state.js)
-
-
-| Methods| Returns|Called From|
-|------|-------|---|
-State.reset_filters() | | Reset Filter Button
-State.toggle_filter(filter)| | Filter Buttons
-State.draw_section_summary(crn)| | Rows of Course Table (Button)
-State.toggle_favorite(course_id)||Star Buttons in Course Table
-State.clear_added()| | Clear Catalogue Button
-State.toggle_added(crn)| | Section Summary (Add/Remove button)
-State.draw_course_list()| | Search Box (oninput)
-State.is_filter_active(filter)| true/false|Internal
-State.draw_filter()||Internal
-State.updateCookies()||Internal
-State.loadCookies()||Internal
-
 
 ## data.js
 Raw data file created by `Dartmouth_Catalogue_Scrapers`. Processed by `catalogue.js` and removed from memory.
+
+## state.js
+
+Handle user interaction
 
 ## painter.js
 
