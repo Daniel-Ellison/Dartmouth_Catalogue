@@ -1,6 +1,6 @@
 // Adjust calendar to window resizing
 window.onresize = function () {
-    State.draw_calendar();
+   draw_calendar(State.added, State.active_filters.term);
 }
 
 // 202301 -> 23W
